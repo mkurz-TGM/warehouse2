@@ -127,3 +127,17 @@ Benachrichtigt die Registration Queue und sendet die Warehouse daten ab.
 ### Zentrale
 
 Hohlt sich die Reciever von Registration und dann fuer jeden Reciever die Queue gibt sie pro warehouse zurueck.
+Hohlt sich die Reciever von Registration und dann fuer jeden Reciever die Queue gibt sie pro warehouse zurueck.
+
+```java
+@RequestMapping(value = "/center/data", produces = MediaType.APPLICATION_JSON_VALUE)
+  public HashMap<String, ArrayList<WarehouseData>>warehouseData() {
+    HashMap<String, ArrayList<WarehouseData>> data = new HashMap<>();
+    Registration.updateRegistrations();
+    HashSet<String> keys = new HashSet<String>(Registration.keys());
+    for (String key : keys) {
+      data.put(key, Registration.get(key).getMessage());
+    }
+    return data;
+  }
+```
