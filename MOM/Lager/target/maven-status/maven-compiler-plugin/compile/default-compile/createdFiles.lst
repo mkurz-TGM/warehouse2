@@ -1,0 +1,8 @@
+mkurz/controller/WarehouseSimulation.class
+mkurz/controller/WarehouseConsumer.class
+mkurz/model/Product.class
+mkurz/controller/MOMSender.class
+mkurz/controller/WarehouseService.class
+mkurz/model/WarehouseData.class
+mkurz/WarehouseApplication.class
+mkurz/controller/WarehouseController.class

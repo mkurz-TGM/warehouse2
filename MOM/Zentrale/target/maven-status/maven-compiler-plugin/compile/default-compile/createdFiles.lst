@@ -1,0 +1,7 @@
+mkurz/controller/Registration.class
+mkurz/controller/WarehouseConsumer.class
+mkurz/model/Product.class
+mkurz/controller/MOMReceiver.class
+mkurz/model/WarehouseData.class
+mkurz/WarehouseApplication.class
+mkurz/controller/WarehouseController.class
